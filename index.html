@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+<title>S&T TVC</title>
+</head>
+
+<head>
+<style>body{background-color:#d0e4fe;}h1{color:orange;text-align:center;}p{font-family:"Times New Roman";font-size:20px;}</style>
+</head>
+
+<body>
+
+<div id="heading" align="center">
+<h2>S&T CONTROL OFFICE TRIVANDRUM </h2>
+   
+<p>DAILY UPDATES</p>
+
+<script>
+var dt = new Date();
+document.getElementById("date").innerHTML = dt.toLocaleDateString();
+</script>
+
+<script>
+function startTime() {
+  var today = new Date();
+  var h = today.getHours();
+  var m = today.getMinutes();
+  var s = today.getSeconds();
+  m = checkTime(m);
+  s = checkTime(s);
+  document.getElementById('txt').innerHTML =
+  h + ":" + m + ":" + s;
+  var t = setTimeout(startTime, 500);
+}
+function checkTime(i) {
+  if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+  return i;
+}
+</script>
+</head>
+
+<body onload="startTime()">
+
+<div id="txt"></div><div id="date"></div>
+<table>
+<tr>
+</div>
+<body>
+
+<iframe width="600" height="340" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vScvOGrTi7F3cAv_thALjaovhmYNiPjVo8PtHIxKRWMJTuU58BNxrqRu5s_9hO10yhxsmVPp--FnEHS/pubchart?oid=1201690581&amp;format=interactive">
+</iframe>
+
+<iframe width="600" height="340" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vR0UHgUmCePTqnuQBkd61RK9B3af_K5L7jPQsON_BT8I3HT-mxSzUtrrcYhoIdyjA-leL1J3Covseyy/pubchart?oid=662533768&amp;format=interactive"></iframe>
+
+<iframe width="593.5" height="178.5" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTREHwzSmRvQLViX5Odra8-LNix5umjWuMI4iHxfP1IepSKvaSK1mnCB3nmWm8a7sWnX9-ZRf8X9cnd/pubchart?oid=982620065&amp;format=interactive"></iframe>
+
+</body></html>
+
+
+
+
