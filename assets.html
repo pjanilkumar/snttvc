@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+<title>S&T TVC</title>
+</head>
+
+<link rel="icon" type="image/png" sizes="32x32" href="https://sseshq.github.io/snttvc/favicon-32x32.png">
+
+
+
+<head>
+
+<script>
+function startTime() {
+  var today = new Date();
+  var h = today.getHours();
+  var m = today.getMinutes();
+  var s = today.getSeconds();
+  m = checkTime(m);
+  s = checkTime(s);
+  document.getElementById('txt').innerHTML =
+  h + ":" + m + ":" + s;
+  var t = setTimeout(startTime, 500);
+}
+function checkTime(i) {
+  if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+  return i;
+}
+</script>
+</head>
+
+
+<body onload="startTime()">
+
+<script language=JavaScript>
+<!--
+
+
+
+
+var message="Right Click Disabled!";
+
+
+function clickIE4(){
+if (event.button==2){
+alert(message);
+return false;
+}
+}
+
+function clickNS4(e){
+if (document.layers||document.getElementById&&!document.all){
+if (e.which==2||e.which==3){
+alert(message);
+return false;
+}
+}
+}
+
+if (document.layers){
+document.captureEvents(Event.MOUSEDOWN);
+document.onmousedown=clickNS4;
+}
+else if (document.all&&!document.getElementById){
+document.onmousedown=clickIE4;
+}
+
+document.oncontextmenu=new Function("alert(message);return false")
+
+
+</script>
+
+<div id="txt"></div></div>
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
+
+
+<div  align="center">
+
+<iframe width="1250" height="600" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vR8zdqQJjGPn38kv2V6DiQaOuXVsOjzaOnysPHaMRyJGP4CbzRgylyMM4A5-xw3ha29IK0eiRdxm5Ia/pubhtml?widget=true&amp;headers=false"></iframe>
+
+
+
+</div>
+
+<style>
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color:#292c2f;
+   color: white;
+   text-align: left;
+   height:30px;
+   padding: 2px 8px;
+}
+#foot{
+font: normal 12px sans-serif;}
+</style>
+</head>
+<body>
+
+<div class="footer">
+  <p align="center" id = "foot">&copy;   designed and Maintained by SSE/S/HQ/TVC</p>
+</div>
+
+
+
+
+
+
+</body></html>
+
+
+
+
