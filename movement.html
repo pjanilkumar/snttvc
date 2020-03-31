@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+<title>S&T TVC</title>
+</head>
+
+<head>
+<style>body{margin: 0;background-color:#d0e4fe;}h1{color:orange;text-align:center;}p{font-family:"Times New Roman";font-size:20px;}</style>
+</head>
+
+<body>
+
+<style>
+
+
+.top-container {
+  background-color: #f1f1f1;
+  padding: 30px;
+  text-align: center;
+  
+}
+
+.header {
+  padding: 2px;
+  background: #555;
+  color: #f1f1f1;
+
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 102px;
+}
+</style>
+<div class="header" id="myHeader" align="center">
+ 
+<h2>S&T CONTROL OFFICE TRIVANDRUM </h2>
+
+
+
+<script>
+function startTime() {
+  var today = new Date();
+  var h = today.getHours();
+  var m = today.getMinutes();
+  var s = today.getSeconds();
+  m = checkTime(m);
+  s = checkTime(s);
+  document.getElementById('txt').innerHTML =
+  h + ":" + m + ":" + s;
+  var t = setTimeout(startTime, 500);
+}
+function checkTime(i) {
+  if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+  return i;
+}
+</script>
+</head>
+
+<body onload="startTime()">
+
+<div id="txt"></div></div>
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
+
+
+<div  align="center">
+<style>
+
+
+</style>
+<iframe  width="600px" height="1000px" src="https://docs.google.com/document/d/e/2PACX-1vSEpM_X2vf4-oZRGb6p95qst6XbbPouz0zLIFwHFhlK0dgcFKykcN50wpewWBXuRHcvbdMkCcYwErvc/pub?embedded=true"></iframe>
+
+
+</div>
+
+<style>
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color:#292c2f;
+   color: white;
+   text-align: left;
+   height:30px;
+   padding: 2px 8px;
+}
+#foot{
+font: normal 12px sans-serif;}
+</style>
+</head>
+<body>
+
+<div class="footer">
+  <p id = "foot">&copy;Designed and Maintained by SSE/S/HQ/TVC</p>
+</div>
+
+
+
+
+
+
+</body></html>
+
+
+
+
